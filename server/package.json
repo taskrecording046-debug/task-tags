@@ -1,0 +1,8 @@
+{
+  "name": "task-tags-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": { "start": "node src/index.js", "seed": "node ../db/seed.js" },
+  "dependencies": { "cors": "^2.8.5", "express": "^4.21.0", "pg": "^8.13.0" }
+}

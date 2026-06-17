@@ -1,0 +1,30 @@
+:root {
+  --bg: #f3f5f7; --surface: #ffffff; --ink: #1c2733; --ink-soft: #5b6b7b;
+  --line: #dde3e9; --accent: #2563eb; --danger: #b91c1c; --radius: 10px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.page { max-width: 640px; margin: 0 auto; padding: 48px 24px 64px; }
+.state { padding: 80px; text-align: center; color: var(--ink-soft); }
+.state.error { color: var(--danger); }
+.head { margin-bottom: 20px; }
+.eyebrow { margin: 0 0 6px; font-size: 12px; letter-spacing: 0.14em; color: var(--ink-soft); }
+.head h1 { margin: 0 0 6px; font-size: 26px; }
+.sub { margin: 0; font-size: 13px; color: var(--ink-soft); }
+
+.add-row { display: flex; gap: 8px; margin-bottom: 18px; }
+.add-row input { flex: 1; padding: 9px 12px; border: 1px solid var(--line);
+  border-radius: 6px; font-size: 14px; }
+.add-row button { padding: 9px 18px; border: none; border-radius: 6px;
+  background: var(--accent); color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; }
+
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.task { display: flex; align-items: center; justify-content: space-between;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 10px 14px; }
+.task-main { display: flex; align-items: center; gap: 10px; cursor: pointer; flex: 1; }
+.task-title { font-size: 14px; }
+.task-done .task-title { text-decoration: line-through; color: var(--ink-soft); }
+.del { border: none; background: none; color: var(--ink-soft); cursor: pointer; font-size: 14px; }
+.del:hover { color: var(--danger); }
