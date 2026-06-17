@@ -1,9 +1,10 @@
-// Task routes — STARTER (no tags yet).
-
 const express = require("express");
 const { pool } = require("../db");
-
 const router = express.Router();
+
+async function attachLabels(tasks) {
+  // TODO
+}
 
 // GET /api/tasks
 router.get("/tasks", async (req, res) => {
